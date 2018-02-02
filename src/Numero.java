@@ -40,4 +40,18 @@ public class Numero {
     public void mostrar() {
         System.out.println("valor -> " + num);
     }
+
+    public double valorAleatorio(int ini, int fin) {
+        num = (int) (Math.random() * fin) + ini;
+        return num;
+    }
+    public int factorial(int n){
+        if(n==0) return 1;
+        else
+            return n*factorial(n-1);
+    }
+    public void juego() {
+        System.out.println("valor para adivinar entre 1 y 100");
+        //int valor = leerNumero();
+    }
 }
